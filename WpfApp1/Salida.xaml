@@ -1,0 +1,48 @@
+﻿<Window x:Class="WpfApp1.Salida"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Salida" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label Width="352">Tipo de Documento</Label>
+            <ComboBox Name="TipoDocumento" Width="200">
+                <ComboBoxItem>tipo A</ComboBoxItem>
+                <ComboBoxItem>tipo B</ComboBoxItem>
+                <ComboBoxItem>tipo C</ComboBoxItem>
+            </ComboBox>
+            <Label Content="Número de Documento" Width="351"/>
+            <TextBox Name="NumeroDocumento" Width="200"/>
+
+            <Label Width="352">Peso</Label>
+            <TextBox Name="Peso" Width="200"/>
+
+            <Label Width="352">Tipo de Auto</Label>
+            <ComboBox Name="TipoAuto" Width="200">
+                <ComboBoxItem>tipo x</ComboBoxItem>
+                <ComboBoxItem>tipo y</ComboBoxItem>
+                <ComboBoxItem>tipo z</ComboBoxItem>
+            </ComboBox>
+
+            <Label Width="351">Nombre Transportista</Label>
+            <TextBox Name="NombreTransportista" Width="200"/>
+
+            <Label Width="352">Fecha</Label>
+            <DatePicker Name="Fecha" Width="200"/>
+
+
+            <Label Width="348">Peso de Ingreso</Label>
+            <TextBox Name="PesoIngreso" Width="200"/>
+
+            <Label Width="345">Peso de Salida</Label>
+            <TextBox Name="PesoSalida" Width="200"/>
+
+            <Button Content="Guardar" Width="100" Margin="5" Click="Guardar_Click" />
+            <Button Content="Exit" Width="100" Margin="5" Click="Exit_Click" />
+
+        </StackPanel>
+    </Grid>
+</Window>
